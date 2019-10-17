@@ -1,0 +1,9 @@
+<p>drop-box works!</p>
+<div class="list-box dropListBox" cdkDropList
+id="listToDrop"
+[cdkDropListData]="list2"
+[cdkDropListConnectedTo]="['listToDrag']"
+(cdkDropListDropped)="drop($event)"
+ >
+    <div class="listItem" *ngFor="let item of list2"  cdkDrag>{{item.name}}</div>
+</div>

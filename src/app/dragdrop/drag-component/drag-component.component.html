@@ -1,0 +1,17 @@
+    <p>drag-component works!</p>
+<div class="list-box"
+ id="listToDrag" 
+ cdkDropList
+ [cdkDropListData]="list1"
+ (cdkDropListDropped)="drop($event)"
+ [cdkDropListConnectedTo]="['listToDrop']"
+ [cdkDropListEnterPredicate]="noReturn"
+ >
+    <div 
+     class="listItem"      
+     *ngFor="let item of list1" 
+     [cdkDragData]="item"
+     cdkDrag>
+        {{item.name}}
+    </div>
+</div>
