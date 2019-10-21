@@ -1,6 +1,6 @@
 [
-    {"id":1,"name":"a","state":"stady"},
-    {"id":2,"name":"b","state":"stady"},
-    {"id":3,"name":"c","state":"stady"},
-    {"id":4,"name":"d","state":"stady"}   
+    {"id":1,"name":"a","state":0},
+    {"id":2,"name":"b","state":0},
+    {"id":3,"name":"c","state":0},
+    {"id":4,"name":"d","state":0}   
 ]
